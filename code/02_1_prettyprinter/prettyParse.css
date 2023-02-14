@@ -1,0 +1,61 @@
+pp-output {
+    display: block;
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: #0a6ab6;
+}
+
+pp-tagname {
+    color: #0c98ea;
+}
+
+pp-comment {
+    color: gray;
+}
+
+pp-comment::before {
+    content: '<!--';
+}
+
+pp-comment::after {
+    content: '-->';
+}
+
+pp-opentag::before {
+    content: '<';
+}
+
+pp-opentag::after, pp-closetag::after {
+    content: '>';
+}
+
+pp-attrname {
+    color: #ca686a;
+}
+pp-closetag::before {
+    content: '</';
+}
+
+pp-attribute::before {
+    content: ' ';
+}
+
+pp-attrvalue::before {
+    content: '="';
+}
+
+pp-attrvalue::after {
+    content: '"';
+}
+
+pp-text {
+    color: red;
+}
+
+pp-voidelement::before {
+    content: '<';
+}
+
+pp-voidelement::after {
+    content: '/>';
+}
